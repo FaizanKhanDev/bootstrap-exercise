@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Container
+            row ( total 12 cols )
+                col
+                col
+                col
+                col
+                col
+    -->
+    <div class="container mb-5">
+
+        <div class="row">
+            <div class="col-1"></div>
+
+            <!-- First col -->
+            <div class="col-lg-3 me-4  mt-5 rounded bg-success px-5 py-3">
+                <h4 class="h4 text-center text-white">Intermediate</h4>
+
+                <p class="text-center text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A paragraph is defined as “a group of
+                    sentences
+                    or a single
+                    sentence that forms a unit” (Lunsford and Connors 116). Length
+                    and appearance do not determine whether a section in a paper
+                </p>
+
+            </div>
+
+
+            <!-- Second col -->
+            <div class="col-lg-3 me-4  mt-5 rounded bg-primary px-5 py-3">
+
+                <h4 class="h4 text-center text-white">
+                    Diploma
+                </h4>
+                <p class="text-center text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A paragraph is defined as “a group of
+                    sentences
+                    or a single
+                    sentence that forms a unit” (Lunsford and Connors 116). Length
+                    and appearance do not determine whether a section in a paper
+                </p>
+            </div>
+
+
+            <!-- Third col -->
+
+            <div class="col-lg-3 me-4 mt-5 rounded bg-secondary px-5 py-3">
+                <h4 class="h4 text-center text-white">
+                    Post Graduation
+
+                </h4>
+                <p class="text-center text-white">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A paragraph is defined as “a group of
+                    sentences
+                    or a single
+                    sentence that forms a unit” (Lunsford and Connors 116). Length
+                    and appearance do not determine whether a section in a paper
+                </p>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <!-- Lg 992 breakpoint isky ya barra bar ya issey chota bara hoga toh yeh chlta rhy ga wrna break hojye -->
+            <div class="col-lg-4 col-md-4 col-sm-3 col-4">
+                <img class="img-fluid rounded " id="img1" onmouseover="enlargeImg('img1')"
+                    onmouseleave="resetImageSize('img1')" src="https://webrespons.netlify.app/eduford_img/london.png"
+                    alt="">
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-3 col-4">
+                <img onmouseover="enlargeImg('img2')" onmouseleave="resetImageSize('img2')" id="img2"
+                    class="img-fluid rounded " src="https://webrespons.netlify.app/eduford_img/washington.png" alt="">
+            </div>
+            <div class="
+                col-lg-4
+                col-md-4 
+                col-sm-3 
+                col-5
+                ">
+                <img id="img3" onmouseover="enlargeImg('img3')" onmouseleave="resetImageSize('img3')" class="img-fluid rounded "
+                    src="https://webrespons.netlify.app/eduford_img/newyork.png" alt="">
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+
+    <script>
+        let img = document.getElementById("img1");
+        let img2 = document.getElementById("img2");
+        let img3 = document.getElementById("img3");
+
+
+
+
+
+
+        function enlargeImg(params) {
+
+            if (params == 'img1') {
+                // Set image size to 1.5 times original
+                img.style.transform = "scale(1.1)";
+                // Animation effect
+                img.style.transition = "transform 0.25s ease";
+            } else if (params == 'img2') {
+                // Set image size to 1.5 times original
+                img2.style.transform = "scale(1.1)";
+                // Animation effect
+                img2.style.transition = "transform 0.25s ease";
+            }
+            else if (params == 'img3') {
+                // Set image size to 1.5 times original
+                img3.style.transform = "scale(1.1)";
+                // Animation effect
+                img3.style.transition = "transform 0.25s ease";
+            }
+
+        }
+
+        function resetImageSize(params) {
+            if(params == 'img1'){
+                // Set image size to 1.5 times original
+                img.style.transform = "scale(1)";
+                // Animation effect
+                img.style.transition = "transform 0.25s ease";
+            }else if(params == 'img2'){
+                // Set image size to 1.5 times original
+                img2.style.transform = "scale(1)";
+                // Animation effect
+                img2.style.transition = "transform 0.25s ease";
+            }
+            else if(params == 'img3'){
+                // Set image size to 1.5 times original
+                img3.style.transform = "scale(1)";
+                // Animation effect
+                img3.style.transition = "transform 0.25s ease";
+            }
+            
+        }
+
+    </script>
+
+
+</body>
+
+</html>
